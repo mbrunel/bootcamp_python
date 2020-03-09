@@ -1,5 +1,5 @@
 python -c "help('modules')"
 pip list
 pip show numpy
-python list.py | grep tesseract
+pip search tesseract
 pip freeze > requirements.txt
