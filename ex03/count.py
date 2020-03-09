@@ -21,7 +21,7 @@ def text_analyzer(*strings):
 			low += 1
 		elif c.isupper():
 			up += 1
-		elif c == '.' or c == ',' or c == ';' or c == '?' or c == '!' or c == ':':
+		elif c == '.' or c == ',' or c == ';' or c == '?' or c == '!' or c == ':' or c == '\'' or c == '-' or c == '\"':
 			punct += 1
 		elif c == ' ' or c == '\t':
 			spaces += 1
