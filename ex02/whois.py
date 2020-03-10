@@ -3,6 +3,8 @@ import sys
 i = -1
 
 if (len(sys.argv) != 2):
+	if (len(sys.argv) != 1):
+		print("ERROR")
 	exit()
 arg = sys.argv[1]
 if arg.isnumeric() == False:

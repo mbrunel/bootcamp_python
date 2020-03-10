@@ -3,7 +3,8 @@ import sys
 i = 0
 final = ''
 stop = len(sys.argv) - 2
-
+if len(sys.argv) == 1:
+	exit()
 for arg in reversed(sys.argv):
 	for car in reversed(arg):
 		if car.islower():
