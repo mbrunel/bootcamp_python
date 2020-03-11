@@ -6,7 +6,7 @@
 #    By: mbrunel <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/03/11 08:11:09 by mbrunel           #+#    #+#              #
-#    Updated: 2020/03/11 09:21:54 by mbrunel          ###   ########.fr        #
+#    Updated: 2020/03/11 09:32:11 by mbrunel          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,9 +15,9 @@ from vector import Vector
 v = Vector(4)
 print(v)
 print(v + v)
-print(v + 3)
+print(3 + v)
 print(v - v)
-print(v -3)
+print(3 - v)
 print(v * v)
-print(v * 3)
-print(v / 3)
+print(3 * v)
+print(3 / v)

@@ -6,7 +6,7 @@
 #    By: mbrunel <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/03/11 08:12:10 by mbrunel           #+#    #+#              #
-#    Updated: 2020/03/11 09:21:58 by mbrunel          ###   ########.fr        #
+#    Updated: 2020/03/11 09:32:42 by mbrunel          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,6 +46,9 @@ class Vector:
 			except:
 				return Vector(-1)
 
+	def __radd__(self, other):
+		return self + other
+
 	def __sub__(self, other):
 		if self.size == -1:
 			return Vector(-1) 
@@ -60,6 +63,9 @@ class Vector:
 			except:
 				return Vector(-1)
 
+	def __rsub__(self, other):
+		return self - other
+
 	def __truediv__(self, other):
 		if self.size == -1:
 			return Vector(-1) 
@@ -67,6 +73,9 @@ class Vector:
 			return Vector([i / other for i in self.values])
 		else:
 			return Vector(-1)
+
+	def __rtruediv__(self, other):
+		return self / other
 
 	def __mul__(self, other):
 		if self.size == -1:
@@ -82,3 +91,5 @@ class Vector:
 			except:
 				return Vector(-1)
 
+	def __rmul__(self, other):
+		return self * other
