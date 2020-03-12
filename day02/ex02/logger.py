@@ -6,7 +6,7 @@
 #    By: mbrunel <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/03/12 06:07:22 by mbrunel           #+#    #+#              #
-#    Updated: 2020/03/12 06:50:55 by mbrunel          ###   ########.fr        #
+#    Updated: 2020/03/12 07:18:55 by mbrunel          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,8 +15,7 @@ from random import randint
 
 def log(func):
 	f = open("machine.log", "a")
-	name = str(func).split()[1].split('.')[1].split('_')
-	f.write(name[0] + " " + name[1] +  "\n")
+	f.write(str(func).split()[1].split('.')[1] + "\n")
 	def inner1(*args, **kwargs):
 		return func(*args, **kwargs)
 	return inner1
